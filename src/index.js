@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './initial-files/reportWebVitals';
+import MainElement from './MainElement';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./CSS FIles/not-pokedex.css";
+import PokemonListPage from './PokemonListPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainElement />
+  }, 
+  {
+    path: "search-input-list",
+    element: <PokemonListPage />
+  }
+])
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
