@@ -369,6 +369,7 @@ footer {
 
     .data-fetcher {
         width: 360px;
+        margin: 2rem auto 0 auto;
     }
 
     .image-container {
@@ -391,6 +392,16 @@ footer {
     .image-container {
         height: 160px;
         width: 160px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .pokemon-card {
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
     }
 
     .error-message {
