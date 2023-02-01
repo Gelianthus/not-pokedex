@@ -1,6 +1,5 @@
 import DataFetcher from "./DataFetcher";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import {BsArrowUpSquareFill} from "react-icons/bs"
 
 function MainElement () {
@@ -39,7 +38,7 @@ function MainElement () {
                     <div><a rel="noreferrer" className="external-link" href="https://pokeapi.co/" target="_blank">PokeAPI</a> and <a rel="noreferrer" href="https://github.com/PokeAPI/pokeapi-js-wrapper" target="_blank" className="external-link">pokeapi-js-wrapper</a></div>
                 </div>
                 <div className="page-link-container">
-                    <p>Click <Link to={"search-input-list"} className="page-link">here</Link> to browse all available search inputs.</p>
+                    <p>Click <a target="_blank" rel="noreferrer" href="PokemonListPage.js" className="page-link">here</a> to browse all available search inputs.</p>
                 </div>
                 <button onClick={scrollToTop} className={`auto-scroll-main ${isIconVisible ? "icon-visible" : "icon-hidden"}`}><BsArrowUpSquareFill className="arrow-icon-main"></BsArrowUpSquareFill></button>
             </footer>

@@ -1,6 +1,5 @@
 import pokemonNamesArr from "./pokemonList";
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import {BsArrowUpSquareFill} from 'react-icons/bs';
 import "./CSS FIles/search-input-list-page.css";
 
@@ -32,9 +31,6 @@ function PokemonListPage () {
 
     return (
         <main>
-            <div className="main-page-link-container">
-                <Link className="main-page-link" to={"/"}>Return to main page</Link>
-            </div>
             <div className="prefixes">
                 <p>Here are some of the available prefixes to target specific forms:</p>
                 <ul className="prefix-list">
