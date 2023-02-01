@@ -39,7 +39,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 .user-input {
@@ -248,13 +247,14 @@ ul {
     position: absolute;
     font-size: 0.75rem;
     width: 16ch;
-    top: -100%;
+    top: 25%;
+    right: -75%;
     margin-left: 0.25rem;
     font-weight: 200;
     background-color: var(--black);
     padding: 0.25rem;
     color: var(--light-brown);
-    border-radius: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
 }
 
 .info-text-container {
@@ -342,6 +342,21 @@ footer {
 }
 
 @media (max-width: 720px) {
+
+    .search-info-visible {
+        display: inline-block;
+        position: absolute;
+        font-size: 0.75rem;
+        width: 16ch;
+        top: -200%;
+        right: 0;
+        margin-left: 0.25rem;
+        font-weight: 200;
+        background-color: var(--black);
+        padding: 0.25rem;
+        color: var(--light-brown);
+        border-radius: 0.5rem 0.5rem 0 0.5rem;
+    }
 
     .image-container {
         height: 220px;

@@ -62,8 +62,8 @@ function DataFetcher () {
         <div className="data-fetcher">
             
             <div className="user-inputs-container">
-                <p className={isTextHidden ? "info-text-hidden" : "search-info-visible"}>Pokémon not showing? Use the link below to check all available inputs.</p>
                 <div className="text-input-container">
+                    <p className={isTextHidden ? "info-text-hidden" : "search-info-visible"}>Pokémon not showing? Use the link below to check all available inputs.</p>
                     <input className="text-input user-input" type="text" ref={inputRef} onChange={changeHandle}/>
                     <div className="icon-container">
                         <BsFillInfoCircleFill className="info-icon" onClick={textVisibilityToggle}></BsFillInfoCircleFill>
