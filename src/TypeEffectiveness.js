@@ -16,7 +16,7 @@ function TypeEffectiveness ({ displayPokemon }) {
     const backgroundColorFlat = (type) => {
         return type === "normal" ? {background: typeNonGradientColors.normal}
         : type === "fire" ? {background: typeNonGradientColors.fire}
-        : type === "water" ? {background: typeNonGradientColors.fire}
+        : type === "water" ? {background: typeNonGradientColors.water}
         : type === "electric" ? {background: typeNonGradientColors.electric}
         : type === "grass" ? {background: typeNonGradientColors.grass}
         : type === "ice" ? {background: typeNonGradientColors.ice}
