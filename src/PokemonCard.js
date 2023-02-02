@@ -59,7 +59,7 @@ function PokemonCard ({displayPokemon }) {
     const backgroundColorGradient = (type) => {
         return type === "normal" ? {background: typeTransparentColors.normal}
         : type === "fire" ? {background: typeTransparentColors.fire}
-        : type === "water" ? {background: typeTransparentColors.fire}
+        : type === "water" ? {background: typeTransparentColors.water}
         : type === "electric" ? {background: typeTransparentColors.electric}
         : type === "grass" ? {background: typeTransparentColors.grass}
         : type === "ice" ? {background: typeTransparentColors.ice}
@@ -80,7 +80,7 @@ function PokemonCard ({displayPokemon }) {
     const backgroundColorFlat = (type) => {
         return type === "normal" ? {background: typeNonGradientColors.normal}
         : type === "fire" ? {background: typeNonGradientColors.fire}
-        : type === "water" ? {background: typeNonGradientColors.fire}
+        : type === "water" ? {background: typeNonGradientColors.water}
         : type === "electric" ? {background: typeNonGradientColors.electric}
         : type === "grass" ? {background: typeNonGradientColors.grass}
         : type === "ice" ? {background: typeNonGradientColors.ice}
