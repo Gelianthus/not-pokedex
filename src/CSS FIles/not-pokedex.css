@@ -300,18 +300,6 @@ footer {
     text-decoration-color: var(--black);
 }
 
-.page-link {
-    color: var(--light-brown);
-    text-decoration: underline;
-    text-decoration-color: var(--light-brown);
-    text-underline-offset: 0.25rem;
-}
-
-.page-link:active {
-    color: var(--black);
-    text-decoration-color: var(--black);
-}
-
 .auto-scroll-main {
     border: none;
     background: none;
@@ -399,7 +387,6 @@ footer {
     .affected {
         height: 4.5rem;
     }
-
 }
 
 @media (max-width: 360px) {
@@ -427,4 +414,119 @@ footer {
         width: 100%;
     }
 
+}
+
+.list-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    background-color: var(--light-brown);
+    margin: 2rem auto 0 auto;
+    gap: 0.75rem;
+    padding-right: 3rem;
+}
+
+@media (max-width: 720px) {
+    .list-items {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .list-items {
+        font-size: 0.7rem;
+    }
+}
+
+.header-two {
+    margin: 1rem;
+    text-align: center;
+}
+
+.back-link {
+    color: var(--black);
+    text-decoration-color: var(--black);
+    text-underline-offset: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.back-link:active {
+    color: var(--light-brown);
+    text-decoration-color: var(--light-brown);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.prefixes {
+    padding: 1rem;
+}
+
+.search-input-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 0.25rem;
+}
+
+.auto-scroll {
+    border: none;
+    background: none;
+    position: fixed;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrow-icon {
+    font-size: 3rem;
+    fill: var(--black);
+}
+
+@media (max-width: 480px) {
+    .arrow-icon {
+        font-size: 2rem;
+    }
+}
+
+.icon-visible {
+    display: block;
+}
+
+.icon-hidden {
+    display: none;
+}
+
+.dialog-box {
+    width: 100%;
+    max-width: unset;
+    min-height: 100vh;
+}
+
+.modal-button {
+    text-decoration: none;
+    color: var(--light-brown);
+    text-decoration: underline;
+    text-decoration-color: var(--light-brown);
+    text-underline-offset: 0.25rem;
+    background: none;
+    border: none;
+    font-size: inherit;
+    outline: none;
+}
+
+.modal-button:active {
+    color: var(--black);
+    text-decoration-color: var(--black);
 }
