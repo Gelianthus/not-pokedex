@@ -60,7 +60,7 @@ function MainElement () {
                         <h2 className="header-two">
                             <button className="back-link" onClick={() => dialogToggle(false)}>Close</button>
                         </h2>
-                        <div className="prefixes">
+                        <div className="suffixes">
                             <p>Here are some of the available suffixes to target specific forms:</p>
                             <ul className="suffix-list">
                                 <li className="suffix-item">"-mega"</li>
