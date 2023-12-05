@@ -61,11 +61,11 @@ function MainElement () {
                             <button className="back-link" onClick={() => dialogToggle(false)}>Close</button>
                         </h2>
                         <div className="prefixes">
-                            <p>Here are some of the available prefixes to target specific forms:</p>
-                            <ul className="prefix-list">
-                                <li className="prefix-item">"-mega"</li>
-                                <li className="prefix-item">"-alola"</li>
-                                <li className="prefix-item">"-galar"</li>
+                            <p>Here are some of the available suffixes to target specific forms:</p>
+                            <ul className="suffix-list">
+                                <li className="suffix-item">"-mega"</li>
+                                <li className="suffix-item">"-alola"</li>
+                                <li className="suffix-item">"-galar"</li>
                                 <li className="prefix-item">"-gmax"</li>
                             </ul>
                         </div>
